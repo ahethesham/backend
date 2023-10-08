@@ -1,0 +1,29 @@
+[
+
+    {
+ "misc":[{"question":"which of the following is false about C programming language?","snippet":"","option_01":"C is a compiled language ","option_02":"C supports access specifiers ","option_03":"C supports struct","option_04":"C supports user defined data types","answer":"2","explaination":""},
+              {"question":"which of the following is false about C and CPP programming languages?","snippet":"","option_01":"C and CPP support structs","option_02":"C and CPP provide user defined data types","option_03":"C and CPP support inheritance ","option_04":"C and CPP support pointers mechanisnm","answer":"3","explaination":""},
+               {"question":"which of the following is false about inline functions in CPP programming language?","snippet":"","option_01":"inline functions are faster than normal functions ","option_02":"inline function interrupts the main function and a return address will be given when called","option_03":"CPP supports inline functions","option_04":"the Keyword 'inline' is used while defining inline functions","answer":"2","explaination":""},
+               {"question":"which of the following is false about C language ?","snippet":"","option_01":"C is a compiled language ","option_02":"Dynamic memory can be requested using 'new' keyword","option_03":"C supports user defined data types","option_04":"C supports structs ","answer":"2","explaination":""},
+              {"question":"which of the following is true about C language?","snippet":"","option_01":"C supports object oriented programming","option_02":"C supports polymorphism ","option_03":"memory has to be cleared manually in C","option_04":"C is dynamically typed language ","answer":"3","explaination":""},
+              {"question":"which of the following is known as scope resolution operator?","snippet":"","option_01":"?:","option_02":"::","option_03":"->*","option_04":":*","answer":"2","explaination":""},
+              {"question":"how many basic loops are available in C?","snippet":"","option_01":"1","option_02":"2","option_03":"3","option_04":"4","answer":"3","explaination":""},
+              {"question":"which of the following is false about C and CPP?","snippet":"","option_01":"it can access memory address of local storage","option_02":"it can handle file system","option_03":"it can access memory address of registers","option_04":"it can update values directly using address","answer":"3","explaination":""},
+              {"question":"select the odd one out considering C programming Language ","snippet":"","option_01":"int ","option_02":"float","option_03":"char","option_04":"boolean","answer":"4","explaination":""},
+              {"question":"predict the output for the following code snippet?","snippet":"#include<stdio.h>\nint main(){\nint i=-1;\ndo{\nprintf(\"%d\",i);\n}while(i>0);\nreturn 0;\n}","option_01":"0","option_02":"1","option_03":"syntax error","option_04":"-1","answer":"4","explaination":""},
+              {"question":"predict the output for the following code snippet?","snippet":"#include<stdio.h>\nint main(){\nint a=2,b=4;\nif(a&b)\n{\nprintf(\"1\");\n}\nelse{\nprintf(\"2\");\n}\nreturn 0;\n}","option_01":"1","option_02":"2","option_03":"runtime error","option_04":"syntax error","answer":"2","explaination":""},
+              {"question":"predict the output for the following code snippet?","snippet":"#include<stdio.h>\nint main(){\nint a=2;\nif(a==2)\nprintf(\"1\"),a+=1;\nelse if(a==3)\nprintf(\"2\"),a+=1;\nelse\nprintf(\"3\");\n\n}","option_01":"1","option_02":"12","option_03":"runtime error","option_04":"123","answer":"1","explaination":""},
+              {"question":"predict the output for the following code snippet?","snippet":"#include<stdio.h>\nint main(){\nint a=5,sum=0;\nwhile(a--){\nsum+=a*sum;\n}\nprintf(\"%d\",sum);\nreturn 0;\n}","option_01":"15","option_02":"120","option_03":"runtime error","option_04":"0","answer":"4","explaination":""}]
+    },
+    {
+        "pointers":[],
+        "macros":[],
+        "templates":[],
+        "struct":[],
+        "vector":[],
+        "map":[],
+        "unordered_map":[],
+        "set":[],
+        "preprocessor":[]
+    }
+]
