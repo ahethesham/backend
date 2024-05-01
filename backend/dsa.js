@@ -12,7 +12,7 @@ const dsa={
         d[d.length-1].push(req.body)
         data.aptitude=d;
         data=JSON.stringify(data)
-        fs.writeFileSync(__dirname+'/mocktest_db.json',data,()=>console.log(done))
+        fs.writeFileSync(__dirname+'/mocktest_db.json',data)
     },
     get_tree:function(req,res){
         let data=fs.readFileSync(__dirname+'/database.json','utf8')

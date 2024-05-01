@@ -6,8 +6,14 @@ import {java} from './java.js'
 import {algo} from './algo.js'
 import {dbms} from './dbms.js'
 import {os} from './os.js'
-import { mocktest } from './mocktest.js'
+import { mocktest,mockstatus } from './mocktest.js'
 import { mocktest_table } from './mocktest_table.js'
+import { user } from './user.js'
+import { update } from './update.js'
+import { track } from './track.js'
+import {js} from './js.js'
+import { react } from './react.js'
+import { tracker } from './hosting/index.js'
 var app=express()
 app.use(parser.urlencoded({ extended: false }))
 app.use(parser.json())
@@ -22,8 +28,9 @@ app.use((req,res,next)=>{
 })
 app.listen(8000)
 app.post('/cpp/post',cpp.home)
-
 app.post('/ds/array',dsa.add)
+
+
 app.get('/ds/tree',dsa.get_tree)
 app.get('/ds/graph',dsa.get_graph)
 app.get('/ds/stack',dsa.get_stack)
@@ -79,6 +86,21 @@ app.get('/os/main_memory',os.get_main_memory)
 app.get('/os/disk',os.get_disk)
 app.get('/os/misc',os.get_misc)
 
+app.get('/js/closure',js.get_closure)
+app.get('/js/data_types',js.get_datatype)
+app.get('/js/object',js.get_object)
+app.get('/js/asynchronous',js.get_asynchronous)
+app.get('/js/function',js.get_function)
+app.get('/js/nan',js.get_nan)
+
+app.get('/react/component',react.component)
+app.get('/react/state',react.state)
+app.get('/react/props',react.props)
+app.get('/react/hooks',react.hooks)
+app.get('/react/callbacks',react.callbacks)
+app.get('/react/class',react.class)
+
+
 app.get('/mocktest/cpp',mocktest.cpp)
 app.get('/mocktest/java',mocktest.java)
 app.get('/mocktest/react',mocktest.react)
@@ -87,7 +109,7 @@ app.get('/mocktest/algo',mocktest.algo)
 app.get('/mocktest/cn',mocktest.cn)
 app.get('/mocktest/js',mocktest.js)
 app.get('/mocktest/dbms',mocktest.dbms)
-app.get('/mocktest/Aptitude',mocktest.aptitude)
+app.get('/mocktest/aptitude',mocktest.aptitude)
 
 
 app.get('/mocktest/table/all',mocktest_table.all)
@@ -99,11 +121,28 @@ app.get('/mocktest/table/dbms',mocktest_table.dbms)
 app.get('/mocktest/table/js',mocktest_table.js)
 app.get('/mocktest/table/cpp',mocktest_table.cpp)
 app.get('/mocktest/table/html',mocktest_table.html)
-app.get('/mocktest/table/Aptitude',mocktest_table.aptitude)
-app.get('/mocktest/table/Numerical',mocktest_table.numerical)
-app.get('/mocktest/table/Reasoning',mocktest_table.reasoning)
+app.get('/mocktest/table/aptitude',mocktest_table.aptitude)
+app.get('/mocktest/table/numerical',mocktest_table.numerical)
+app.get('/mocktest/table/reasoning',mocktest_table.reasoning)
 
+app.post('/mocktest/getstatus/cpp',mockstatus.cpp)
+app.post('/mocktest/getstatus/java',mockstatus.java)
+app.post('/mocktest/getstatus/aptitude',mockstatus.aptitude)
+app.post('/mocktest/getstatus/algo',mockstatus.algo)
+app.post('/mocktest/getstatus/cn',mockstatus.cn)
+app.post('/mocktest/getstatus/js',mockstatus.js)
+app.post('/mocktest/getstatus/dbms',mockstatus.dbms)
+app.post('/mocktest/getstatus/ds',mockstatus.ds)
+app.post('/mocktest/getstatus/reasoning',mockstatus.reasoning)
+app.post('/mocktest/getstatus/numerical',mockstatus.numerical)
+app.post('/mocktest/getstatus/all',mockstatus.all)
 
+app.post('/mocktest/updatescore',update.add)
 
+app.post('/auth/new_user',user.add)
+app.post('/auth/login',user.find)
 
+app.post('/track/getleaderboard',track.getleaderboard)
+app.post('/track/getstats',track.getstats)
 
+app.post('/hosting/isValid',tracker.isValid)

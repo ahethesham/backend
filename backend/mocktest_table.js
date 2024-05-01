@@ -87,7 +87,7 @@ const mocktest_table={
         data=JSON.parse(data)
         let ans=[]
         for(let i=0;i<data.aptitude.length;i++)
-        ans.push(['Aptitude',i])
+        ans.push(['aptitude',i])
         res.send(ans)
       },
       reasoning:function(req,res){
@@ -95,7 +95,7 @@ const mocktest_table={
         data=JSON.parse(data)
         let ans=[]
         for(let i=0;i<data.reasoning.length;i++)
-        ans.push(['Reasoning',i])
+        ans.push(['reasoning',i])
         res.send(ans)
       },
       numerical:function(req,res){
@@ -103,7 +103,7 @@ const mocktest_table={
         data=JSON.parse(data)
         let ans=[]
         for(let i=0;i<data.numerical.length;i++)
-        ans.push(['Numerical',i])
+        ans.push(['numerical',i])
         res.send(ans)
       },
   }

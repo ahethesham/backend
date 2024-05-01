@@ -90,6 +90,12 @@
         "dml":[{"text":[["data not available"]]}]
     },
     {
+        "closure":[{"text":[["data not available"]]}],
+        "object":[{"text":[["data not available"]]}],
+        "datatype":[{"text":[["data not available"]]}],
+        "function":[{"text":[["data not available"]]}],
+        "nan":[{"text":[["data not available"]]}],
+        "asynchronous":[{"text":[["data not available"]]}]
 
     },
     {
@@ -103,6 +109,15 @@
         "string":[{"text":[["data not available"]]}],
         "thread":[{"text":[["data not available"]]}],
         "access_specifier":[{"text":[["data not available"]]}]
+
+    },
+    {
+        "component":[{"text":[["data not available"]]}],
+        "state":[{"text":[["data not available"]]}],
+        "hooks":[{"text":[["data not available"]]}],
+        "class":[{"text":[["data not available"]]}],
+        "props":[{"text":[["data not available"]]}],
+        "callbacks":[{"text":[["data not available"]]}]
 
     }
 ]
